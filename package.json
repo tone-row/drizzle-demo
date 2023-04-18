@@ -4,17 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-migration": "npx drizzle-kit generate:pg --out src/db/migrations --schema src/db/schema.ts",
+    "migrate": "ts-node src/db/migrate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "drizzle-orm": "^0.24.1",
     "pg": "^8.10.0"
   },
   "devDependencies": {
     "@types/pg": "^8.6.6",
-    "drizzle-kit": "^0.17.5"
+    "drizzle-kit": "^0.17.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
