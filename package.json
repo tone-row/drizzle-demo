@@ -8,5 +8,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.24.1",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.6",
+    "drizzle-kit": "^0.17.5"
+  }
 }
